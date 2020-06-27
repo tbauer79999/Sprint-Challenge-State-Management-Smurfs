@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { fetchSmurfs, removeSmurf } from "../actions";
+import { fetchSmurfs } from "../actions";
 import Smurf from "./Smurf";
 import "./App.css";
 
@@ -15,15 +15,11 @@ const Smurfs = (props) => {
     props.fetchSmurfs();
   }
 
-  const handleDelete = (id) => {
-    console.log(id);
-    props.removeSmurf(id);
-  };
 
   return (
     <div>
       {props.smurfs.map((smurf) => (
-        <Smurf id={smurf.id} {...smurf} handleDelete={handleDelete} />
+        <Smurf id={smurf.id} {...smurf}  />
       ))}
     </div>
   );
@@ -39,4 +35,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { fetchSmurfs, removeSmurf })(Smurfs);
+export default connect(mapStateToProps, { fetchSmurfs })(Smurfs);

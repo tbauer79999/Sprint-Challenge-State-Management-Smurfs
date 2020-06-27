@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ContextSmurf from "./context/ContextSmurf";
+import ContextSmurf from "./context/ContextSmurf;
 
 
 export default function Smurfs() {
