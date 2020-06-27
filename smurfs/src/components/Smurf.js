@@ -1,17 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Smurf = (props) => {
-  const onDelete = (e) => {
-    props.handleDelete(props.id);
-  };
+ 
 
   return (
-    <>
+    <div>
       <h3>{props.name}</h3>
       <p>Age: {props.age}</p>
       <p>Height: {props.height}</p>
-      <hr className="hr"></hr>
-    </>
+      <br /><br /><br />
+    </div>
   );
 };
 

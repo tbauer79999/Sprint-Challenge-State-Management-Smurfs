@@ -32,44 +32,47 @@ const SmurfsForm = (props) => {
 
   return (
     <div>
+
       <form onSubmit={handleSubmit}>
-        <form>
-          Name
+        <form> Name
           <input
             className="title-input"
             type="text"
             name="name"
             value={name}
-            onChange={handleChangesName}
-          />
+            onChange={handleChangesName}   />
         </form>
-        <form>
-          Age
+
+          <br />
+          
+        <form>  Age
           <input
             className="title-input"
             type="text"
             name="age"
             value={age}
-            onChange={handleChangesAge}
-          />
+            onChange={handleChangesAge}   />
         </form>
-        <form>
-          Height
+
+        <br />
+
+        <form>  Height
           <input
             className="title-input"
             type="text"
             name="height"
             value={height}
-            onChange={handleChangesHeight}
-          />
+            onChange={handleChangesHeight}   />
         </form>
-        <button>Add New Smurfs</button>
+
+        <br />
+
+        <button>Add Your Smurfs</button>
       </form>
     </div>
   );
 };
 
-// export default SmurfsForm
 
 const mapStateToProps = (state) => {
   return {};
