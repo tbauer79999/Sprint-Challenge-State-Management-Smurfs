@@ -7,7 +7,6 @@ import "./App.css";
 const Smurfs = (props) => {
   console.log(props);
   useEffect(() => {
-    console.log("fetching");
     props.fetchSmurfs();
   }, []);
 
@@ -19,11 +18,11 @@ const Smurfs = (props) => {
   return (
     <div>
       {props.smurfs.map((smurf) => (
-        <Smurf id={smurf.id} {...smurf}  />
+        <Smurf id={smurf.id} {...smurf} />
       ))}
     </div>
   );
-}; 
+};
 
 const mapStateToProps = (state) => {
 

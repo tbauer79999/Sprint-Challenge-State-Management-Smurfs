@@ -35,34 +35,19 @@ const SmurfsForm = (props) => {
 
       <form onSubmit={handleSubmit}>
         <form> Name
-          <input
-            className="title-input"
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleChangesName}   />
+          <input className="title-input" type="text" name="name" value={name} onChange={handleChangesName} />
         </form>
 
-          <br />
-          
+        <br />
+
         <form>  Age
-          <input
-            className="title-input"
-            type="text"
-            name="age"
-            value={age}
-            onChange={handleChangesAge}   />
+          <input className="title-input" type="text" name="age" value={age} onChange={handleChangesAge} />
         </form>
 
         <br />
 
         <form>  Height
-          <input
-            className="title-input"
-            type="text"
-            name="height"
-            value={height}
-            onChange={handleChangesHeight}   />
+          <input className="title-input" type="text" name="height" value={height} onChange={handleChangesHeight} />
         </form>
 
         <br />
